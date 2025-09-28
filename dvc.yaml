@@ -1,0 +1,8 @@
+stages:
+  data_ingestion:
+    cmd: python -m src.data_ingestion
+    deps:
+      - src/config.py
+
+    outs:
+      - Data/RAW_DATA.csv
