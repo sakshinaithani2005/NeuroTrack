@@ -11,6 +11,9 @@ class Config:
     # Data Dir (Used in various Configs)
     DATA_DIR: str = os.getenv("DATA_DIR", "Data")
     RAW_DATA:str=os.getenv("RAW_DATA","Data\\RAW_DATA.csv")
+    TRAIN_DATA:str=os.getenv("TRAIN_DATA","Data\\Train_data.csv")
+    TEST_DATA:str=os.getenv("TEST_DATA","Data\\Test_data.csv")
+
 
     #Mongo db atlas configs
     MONGO_DBNAME: str = os.getenv("MONGO_DBNAME", "brainStroke")

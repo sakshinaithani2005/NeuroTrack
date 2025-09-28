@@ -6,3 +6,11 @@ stages:
 
     outs:
       - Data/RAW_DATA.csv
+  data_splitting:
+    cmd: python -m src.data_splitting
+    deps:
+      - src/config.py
+      - Data/RAW_DATA.csv
+    outs:
+      - Data/Train_data.csv
+      - Data/Test_data.csv
